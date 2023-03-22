@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "edqe5i2e4HXSiNkPMW8meYbAhXPo0fEfikDnwrklQMgfeK2nctzo5wq0k8p6xqoWRcOUWev+J05EM455P4kzVw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ghost\\source\\repos\\DsGameSaveConvertor\\DsGameSaveConvertor\\DsGameSaveConvertor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ghost\\.nuget\\packages\\sharpcompress\\0.33.0\\sharpcompress.0.33.0.nupkg.sha512"
+  ],
+  "logs": []
+}
