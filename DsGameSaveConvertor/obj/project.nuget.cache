@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "4ZIFzoPKuKWI2v5eyHmugLujdQw+q5m3eoiLFHrIWxTebFs+EFWT/cC4N9F21CBx9OTJNtg+Vo3rQbX8HcatLg==",
+  "dgSpecHash": "Bd2kdefHMG/0dmYInV2JOXBK0rBvZHKhWF/xXu6lQjJW9Djm+dzsC65IMNal/+cvhOPdz2FWwc2qmuwd/knbMw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ghost\\Desktop\\C#\\DsGameSaveConvertor\\DsGameSaveConvertor\\DsGameSaveConvertor.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ghost\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\ghost\\.nuget\\packages\\squid-box.sevenzipsharp\\1.5.2.21\\squid-box.sevenzipsharp.1.5.2.21.nupkg.sha512",
+    "C:\\Users\\ghost\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",
+    "C:\\Users\\ghost\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "C:\\Users\\ghost\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+    "C:\\Users\\ghost\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
+    "C:\\Users\\ghost\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }
