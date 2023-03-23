@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="SharpCompress" Version="0.33.0" />
-  </ItemGroup>
-
 </Project>

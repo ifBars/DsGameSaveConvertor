@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DsGameSaveConvertor</id>
+    <version>1.0.0</version>
+    <authors>DsGameSaveConvertor</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="7-Zip.CommandLine" version="18.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\ghost\Desktop\C#\DsGameSaveConvertor\DsGameSaveConvertor\bin\Debug\net6.0\DsGameSaveConvertor.runtimeconfig.json" target="lib\net6.0\DsGameSaveConvertor.runtimeconfig.json" />
+    <file src="C:\Users\ghost\Desktop\C#\DsGameSaveConvertor\DsGameSaveConvertor\bin\Debug\net6.0\DsGameSaveConvertor.dll" target="lib\net6.0\DsGameSaveConvertor.dll" />
+  </files>
+</package>

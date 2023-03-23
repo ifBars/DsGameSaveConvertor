@@ -1,9 +1,5 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using SharpCompress.Archives;
-using SharpCompress.Archives.SevenZip;
-using SharpCompress.Common;
+﻿using DsGameSaveConvertor;
+using System;
 
 namespace DsSaveConvertor
 {
@@ -11,44 +7,27 @@ namespace DsSaveConvertor
     {
         static void Main(string[] args)
         {
-            if (args.Length < 1)
+            if (args.Length < 2)
             {
-                Console.WriteLine("Usage: DsSaveConvertor.exe (filePath)");
+                Console.WriteLine("Usage: DsSaveConvertor dsz/dsv filePath");
                 return;
             }
 
-            string filePath = args[0];
-            string extension = Path.GetExtension(filePath);
-            if (extension.ToLower() != ".dsz")
+            string command = args[0];
+            string filePath = args[1];
+
+            switch (command.ToLower())
             {
-                Console.WriteLine("File is not a .dsz file.");
-                return;
+                case "dsz":
+                    FileConverter.ConvertDszToDsv(filePath);
+                    break;
+                case "dsv":
+                    FileConverter.ConvertDsvToDsz(filePath);
+                    break;
+                default:
+                    Console.WriteLine($"Unknown command: {command}");
+                    break;
             }
-
-            string newFilePath = Path.ChangeExtension(filePath, ".dsv");
-
-            using (var archive = SevenZipArchive.Open(filePath))
-            {
-                var entries = archive.Entries.Where(e => !e.IsDirectory);
-
-                if (entries.Count() != 1)
-                {
-                    Console.WriteLine("Error extracting file.");
-                    return;
-                }
-
-                var entry = entries.First();
-                entry.WriteToDirectory(Path.GetDirectoryName(filePath), new ExtractionOptions()
-                {
-                    ExtractFullPath = true,
-                    Overwrite = true
-                });
-            }
-
-            File.Move(Path.Combine(Path.GetDirectoryName(filePath), Path.GetFileNameWithoutExtension(filePath)), newFilePath);
-            File.Delete(filePath);
-
-            Console.WriteLine("File successfully converted.");
         }
     }
 }
