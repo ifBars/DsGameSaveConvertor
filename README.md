@@ -1,2 +1,2 @@
 # DsGameSaveConvertor
- Convert .dsz to .dsv
+ Convert .dsz to .dsv, and vice versa
